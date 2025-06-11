@@ -24,5 +24,8 @@ def get_numb_symbols(book_path):
                 symbols[char] += 1
             else:
                 symbols[char] = 1
-
     return symbols
+
+def sort_on_dict(d):
+    sorted_dict = sorted(d.items(), key=lambda item: item[1], reverse=True)
+    return sorted_dict
